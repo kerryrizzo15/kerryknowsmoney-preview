@@ -41,6 +41,7 @@ if ("IntersectionObserver" in window) {
 
 leadForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
+  if (isGithubPreview) { statusNode.textContent = "Preview only: the waitlist form will be connected on Cloudflare."; return; }
   statusNode.textContent = "Sending...";
 
   const formData = new FormData(leadForm);
