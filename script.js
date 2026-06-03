@@ -3,6 +3,8 @@ const isGithubPreview = location.hostname.endsWith("github.io");
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 
+document.documentElement.classList.add("js");
+
 navToggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
@@ -39,7 +41,7 @@ if ("IntersectionObserver" in window) {
 
 leadForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
-  if (isGithubPreview) { statusNode.textContent = "Preview only: the waitlist form will be connected on Cloudflare."; return; }`n  statusNode.textContent = "Sending...";
+  statusNode.textContent = "Sending...";
 
   const formData = new FormData(leadForm);
   const payload = Object.fromEntries(formData.entries());
