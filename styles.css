@@ -462,9 +462,14 @@ h3 {
 }
 
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 680ms ease, transform 680ms ease;
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(22px);
-  transition: opacity 680ms ease, transform 680ms ease;
 }
 
 .reveal.is-visible {
