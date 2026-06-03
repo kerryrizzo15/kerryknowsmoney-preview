@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kerry Knows Money | Practical money confidence for women</title>
+    <meta name="description" content="Kerry Knows Money helps women build confidence with money through plain-English education, practical habits, and grounded financial conversations.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./">Kerry Knows Money</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#book">Book</a>
+        <a href="#course">Course</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a class="nav-cta" href="#waitlist">Join Waitlist</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Financial education for real life</p>
+          <h1>Money feels easier when you know what to look at first.</h1>
+          <p class="lead">Kerry Knows Money helps women replace money stress with clarity, practical steps, and the confidence to make decisions that fit their life.</p>
+          <div class="button-row">
+            <a class="button primary" href="#course">Join the course waitlist</a>
+            <a class="button secondary" href="#book">Explore the book</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Kerry Knows Money book and lifestyle imagery">
+          <img class="book-cover" src="./assets/book.png" alt="Your Highest Self book">
+          <img class="coffee-photo" src="./assets/coffee.png" alt="Coffee and planning notes">
+        </div>
+      </section>
+
+      <section class="intro-band">
+        <div>
+          <p class="section-kicker">Start here</p>
+          <h2>Simple financial foundations without the shame spiral.</h2>
+        </div>
+        <p>Budgeting, investing, protection, and planning can feel like separate problems. Kerry brings them back to everyday choices, small habits, and a plan you can actually keep coming back to.</p>
+      </section>
+
+      <section id="course" class="split-section">
+        <div class="image-panel">
+          <img src="./assets/workshop.jpg" alt="Women learning in a workshop setting">
+        </div>
+        <div class="content-panel">
+          <p class="section-kicker">Coming soon</p>
+          <h2>Financial Foundations: Building Confidence in Managing Your Money</h2>
+          <p>A 6-week course for women who want a clearer path through budgeting, investing basics, and everyday money decisions.</p>
+          <ul class="check-list">
+            <li>Plain-English lessons for building a strong financial base.</li>
+            <li>Practical steps for reducing overwhelm and seeing progress.</li>
+            <li>Early access updates when registration opens.</li>
+          </ul>
+          <a class="button primary" href="#waitlist">Get on the waitlist</a>
+        </div>
+      </section>
+
+      <section id="book" class="book-section">
+        <div class="book-copy">
+          <p class="section-kicker">Your Highest Self</p>
+          <h2>A wellness and mindset book for lasting change.</h2>
+          <p><em>Your Highest Self</em> brings together 20 authors with practical strategies for wellness, mindset, relationships, resilience, and personal growth.</p>
+          <p>Current pricing from the Squarespace shop: 1 book CA$24.95, 3-book bundle CA$68.95, and 10-book bundle CA$224.95.</p>
+          <div class="price-grid">
+            <div><strong>1 book</strong><span>CA$24.95</span></div>
+            <div><strong>3 books</strong><span>CA$68.95</span></div>
+            <div><strong>10 books</strong><span>CA$224.95</span></div>
+          </div>
+          <p class="note">E-transfer details and checkout flow should be confirmed before launch.</p>
+        </div>
+        <img src="./assets/book.png" alt="Your Highest Self book cover">
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-copy">
+          <p class="section-kicker">About Kerry</p>
+          <h2>Financial planner at heart. Educator in practice.</h2>
+          <p>Kerry Rizzo is a Chartered Investment Manager and CERTIFIED FINANCIAL PLANNER professional accredited by FP Canada, with more than 22 years of experience as an Investment Advisor.</p>
+          <p>Kerry Knows Money is the education side of her work: approachable conversations, grounded habits, and practical ways to help women feel more confident with money.</p>
+          <p class="compliance-note">Investment, insurance, tax, estate, retirement, and firm-specific advice should be reviewed separately before publishing.</p>
+        </div>
+        <img src="./assets/kerry.jpg" alt="Kerry Rizzo">
+      </section>
+
+      <section id="blog" class="blog-section">
+        <div class="section-heading">
+          <p class="section-kicker">Recent writing</p>
+          <h2>Money topics with room for real life.</h2>
+        </div>
+        <div class="blog-grid">
+          <article>
+            <p>May 11, 2026</p>
+            <h3>Aligning Your Money With Your Values</h3>
+            <span>Money reflects priorities, values, and the life you want to lead.</span>
+          </article>
+          <article>
+            <p>May 7, 2026</p>
+            <h3>How Much Disability Insurance Do You Really Need?</h3>
+            <span>Income protection basics and why coverage can matter more than people expect.</span>
+          </article>
+          <article>
+            <p>May 4, 2026</p>
+            <h3>The Money Habits That Compound</h3>
+            <span>Small repeated actions that build confidence and long-term momentum.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="waitlist" class="waitlist-section">
+        <div>
+          <p class="section-kicker">Stay in the loop</p>
+          <h2>Join the course waitlist.</h2>
+          <p>Get updates when Financial Foundations opens and help shape what Kerry builds next.</p>
+        </div>
+        <form class="lead-form" action="./api/lead" method="post">
+          <label>
+            First name
+            <input name="firstName" autocomplete="given-name" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            What do you want help with first?
+            <textarea name="message" rows="4" placeholder="Budgeting, investing, debt, confidence, planning..."></textarea>
+          </label>
+          <button class="button primary" type="submit">Join waitlist</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Kerry Knows Money</p>
+      <p>Educational content only. Personalized financial advice should be reviewed with an appropriately licensed professional.</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
